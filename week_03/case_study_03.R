@@ -16,7 +16,7 @@ plot1 <- ggplot(gapminder, aes(lifeExp, gdpPercap, color = continent, size = pop
   facet_wrap(~year, nrow = 1)+
   theme_bw() +
   labs(x = "Life Expectancy",y = "GDP per capita")
-ggsave("Case_study_3_plot1.png", width = 17, height = 10, units = "cm")
+ggsave("CS3_plot2.png", width = 17, height = 10, units = "cm")
 
 print(plot1)
 
@@ -34,7 +34,7 @@ plot2 <- ggplot(gapminder, aes(year, gdpPercap, color = continent)) +
   facet_wrap(~continent, nrow = 1) +
   theme_bw() +
   labs(x = "Year", y = "GDP per capita")
-ggsave("Case_study_3_plot2.png", width = 17, height = 10, units = "cm") #took help from brendan for ggsave
+ggsave("CS_3_plot2.png", width = 17, height = 10, units = "cm") #took help from brendan for ggsave
 print(plot2)
 
 #plot 2 wasn't working. Re-shuffed some aesthetics from the 1st commit.
