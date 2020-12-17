@@ -1,1 +1,1 @@
- 
+For this weeks case study I found left_join function useful. It can be used to join two dataset.Also i found $ (dollar sign) usedul to extract variable from a dataset.
