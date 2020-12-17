@@ -3,9 +3,9 @@ title: "Case Study 08"
 author: Kaiser Mahmood
 date: August 1, 2020
 output:
+  powerpoint_presentation: default
   github_document: default
   html_document: default
-  powerpoint_presentation: default
   word_document: default
 ---
 
