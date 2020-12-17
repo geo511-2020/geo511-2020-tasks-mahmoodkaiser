@@ -1,13 +1,3 @@
----
-title: "Case Study 12"
-author: Kaiser Mahmood
-date: December 17, 2020
-output:
-  github_document: default
-  html_document: default
----
-
-```{r case study 12}
 library(dplyr)
 library(ggplot2)
 library(ggmap)
@@ -29,5 +19,3 @@ d=meteo_tidy_ghcnd("USW00014733",
 max_temp <- xts(d$tmax,order.by = d$date)
 dygraph(max_temp,main="Daily Maximum Temperature in Buffalo, NY")%>%
   dyRangeSelector(dateWindow = c("2020-01-01", "2020-10-31"))
-```
- 
