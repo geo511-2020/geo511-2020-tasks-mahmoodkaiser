@@ -35,7 +35,6 @@ map_hottest <- ggplot(country_max_each)+
 
 plot(map_hottest)
 
-
 #droping the geometry column
 country_each_cont <- st_set_geometry(country_max_each,value = NULL)
 
