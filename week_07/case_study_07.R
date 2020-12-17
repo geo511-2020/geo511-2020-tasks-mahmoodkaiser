@@ -6,11 +6,11 @@ library(ggplot2)
 library(spData)
 data(world)
 
-plot <- ggplot(world,aes(x=gdpPercap, color=continent)) +
+plot1 <- ggplot(world,aes(x=gdpPercap, fill=continent)) +
   geom_density(alpha=0.5,color=F) +
   labs(x= "GDP Per Capita",
        y= "Density",
        fill = "Contient") +
   theme(legend.position = "bottom")
-plot
-#reprex()
+ggsave("CS_7_plot.png", width = 17, height = 10, units = "cm")
+plot1
